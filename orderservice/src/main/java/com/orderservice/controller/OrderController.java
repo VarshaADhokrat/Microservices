@@ -18,7 +18,7 @@ public class OrderController {
     private final OrderService orderService;
 
     @PostMapping("/placeOrder")
-    public ResponseEntity<Long> placeOrder(@RequestBody OrderRequest orderRequest) {
+    public ResponseEntity<Long> placeOrders(@RequestBody OrderRequest orderRequest) {
 
         log.info("OrderController | placeOrder is called");
 
